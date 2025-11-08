@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./img/casamento.png');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Adiciona uma sobreposição escura para facilitar a leitura */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Traz todo o conteúdo para frente da sobreposição */
+body * {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 60px;
+    margin: -80px 0 40px;
+    color: #01031f; /* Cor de ouro pálido */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 15px #f0e68c;
+}
+
+.countdown {
+    display: flex;
+    transform: scale(2);
+}
+
+.time {
+    margin: 0 15px;
+}
+
+.time h2 {
+    font-size: 36px;
+    margin: 0 0 5px;
+    color: #14078f; /* Cor de ouro pálido */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px #f0e68c;
+}
+
+.time small {
+    font-size: 12px;
+}
+
+/* Media Query para telas menores (celulares) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px; /* Diminui o tamanho do título */
+        margin: 20px 0; /* Ajusta a margem do título */
+    }
+
+    .countdown {
+        transform: scale(1); /* Remove o zoom do contador */
+    }
+
+    .time h2 {
+        font-size: 28px; /* Diminui o tamanho dos números */
+    }
+}

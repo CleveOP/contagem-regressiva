@@ -1,0 +1,32 @@
+{
+  "name": "Contagem Regressiva Casamento",
+  "short_name": "Contagem",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#01031f",
+  "theme_color": "#01031f",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "img/icons/icon-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "img/icons/icon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "img/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
